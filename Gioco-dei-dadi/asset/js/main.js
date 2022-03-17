@@ -6,21 +6,20 @@
 // Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 
 
-let giocatore = Math.floor(Math.random() * 5 +1);
+let giocatore = Math.floor(Math.random() * 6 +1);
 console.log(giocatore);
 
-let computer = Math.floor(Math.random() * 5 +1);
+let computer = Math.floor(Math.random() * 6 +1);
 console.log(computer);
 
 if (giocatore > computer) {
     document.getElementById("box").innerHTML =`Giocatore: Non vincerai mai! ${giocatore}`;
     document.getElementById("box_2").innerHTML =`Computer: Mi hai battuto ancora! ${computer}`;
+
 } else if (giocatore == computer){
     document.getElementById("box").innerHTML =`Pari, rilancia i dadi: `;
 
-}
-
-else {
+} else {
     document.getElementById("box_2").innerHTML =`Computer: Le macchine vinceranno sempre contro voi stupidi umani! ${computer}`;
     document.getElementById("box").innerHTML =`Giocatore: Sto per formattarti! ${giocatore}`;
 }

@@ -11,8 +11,8 @@ let mailUtente = prompt('Inserisci la tua mail:');
 
 let mailTrovata = false;
 
-for ( let i = 0; i < mailUtente.length; i++) {
-    if (utenti[i] == mailUtente) {
+for ( let i = 0; i < utenti.length; i++) {
+    if (mailUtente == utenti[i]) {
         mailTrovata = true;
     } 
 }
